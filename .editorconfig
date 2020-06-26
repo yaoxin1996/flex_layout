@@ -1,0 +1,17 @@
+# 最顶层配置文件，设置后不会继续向下查找editorconfig文件
+root = true
+# 以下规则应用于所有文件
+[*]
+# 文件编码格式均为 utf-8
+charset = utf-8
+# 缩进尺寸（整数代表空格数,也可设为tab,在设定tab_width属性）
+indent_size = 4
+# 使用空格缩进
+indent_style = space
+# 每个文件以空白行结尾
+insert_final_newline = true
+# 去除换行行首的任意空白字符
+trim_trailing_whitespace = true
+# 对md文件单独设置规则（md中的空白行空白字符最好不要除去）
+[*.md]
+trim_trailing_whitespace = false
