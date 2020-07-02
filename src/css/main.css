@@ -1,0 +1,871 @@
+/***********
+  * 页面样式
+  **********/
+
+
+/***********
+  * 基本默认值
+  ***********/
+body {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+html {
+  font-size: 62.5%;
+  color: #222;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* =============
+  工具样式
+================ */
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
+/* 隐藏文本 */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: '.';
+  display: table;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+  /* ie专有属性，可以触发ie的haslayout属性，从而实现清除浮动 */
+}
+
+/* ===============
+  浏览器更新 样式
+=================*/
+.browserupgrade {
+  margin: 0;
+  padding: 1rem;
+  background: #ccc;
+}
+
+/* =============
+  自定义页面样式
+============== */
+body {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #0ae;
+  text-decoration: underline;
+}
+
+/* 网站头部 */
+header {
+  width: 100%;
+}
+
+header .top {
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  color: #fff;
+  background: #555;
+  border-bottom: 1px #ccc000 solid;
+}
+
+header .top .tel {
+  float: left;
+}
+
+header .top ul {
+  text-align: right;
+}
+
+header .top ul li {
+  display: inline-block;
+}
+
+header .top ul li + li {
+  border-left: 1px solid #999;
+  margin-left: -3px;
+}
+
+header .top ul li a {
+  display: inline-block;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 50rem) {
+  header .top ul li a {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  header .top .tel,
+  header .top ul li:nth-child(3),
+  header .top ul li:nth-child(4) {
+    display: none;
+  }
+}
+
+header .main {
+  padding: 0;
+}
+
+header .main .brand {
+  float: left;
+  padding: 1rem 1.5rem;
+}
+
+header .main ul {
+  text-align: right;
+}
+
+header .main ul li {
+  display: inline-block;
+}
+header .main ul li+li {
+  border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a {
+  display: inline-block;
+  padding: 0 3rem;
+  line-height: 5.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #7c7a65;
+  text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a:active {
+  color: #ffb300;
+  background-color: #f8f6f1;
+}
+
+
+@media only screen and (max-width: 50rem) {
+  header .main .brand {
+    width: 100%;
+    text-align: center;
+  }
+  header .main ul {
+    text-align: center;
+  }
+  header .main ul li a {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  header .main ul li:first-child {
+    display: none;
+  }
+}
+
+/* 网站主要内容 */
+.container {
+  width: 100%;
+}
+
+.transaction{
+  width: 100%;
+  background-color: #7C7365;
+}
+
+.trans-content{
+  font-size: 1.4rem;
+  padding: .5rem 0 .2rem 1.5rem;
+}
+
+.trans-data, .trans-report{
+  line-height: 2.0rem;
+  font-size: 1.4rem;
+}
+
+.trans-data{
+  float: left;
+  color: #fff;
+}
+
+.trans-data span{
+  margin: .2rem 0 .2rem .5rem;
+}
+
+.trans-money{
+  border-radius: .3rem;
+  background-color: #F2F1F0;
+  color: #FBA400;
+  display: inline-block;
+  padding: .2rem 1rem;
+  letter-spacing: 3px;
+  box-shadow: 1px 2px 1px #333 inset;
+  font-size: 2rem;
+}
+
+.trans-report{
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+
+.trans-report a{
+  color: #fff;
+}
+
+
+
+
+
+@media only screen and (max-width: 50rem) {
+  .trans-content{
+    font-size: 1.2rem;
+  }
+  
+  .trans-data, .trans-report{
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+  .trans-data span{
+    margin: .15rem 0 .15rem .3rem;
+  }
+  
+  .trans-money{
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .trans-data, .trans-report{
+    width: 100%;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+}
+
+.ad .item{
+  background-repeat: round;
+}
+
+.ad1{
+  background-image: url('../img/ad001-l.png');
+}
+
+.ad2{
+  background-image: url('../img/ad002-l.png');
+}
+
+.ad3{
+  background-image: url('../img/ad003-l.png');
+}
+
+
+.feature, .notice, .product{
+  margin: 1rem 5rem;
+  font-size: 0;
+}
+
+
+.feature .item{
+  /*需要减掉item之间的margin-left总和（1.5rem*2)、3个item的左右border宽度和（2px*2*3），
+    或者item使用 box-sizing: border-box; 就不需要减掉border */
+  width: calc(33.333333333333% - 1rem - 4px);
+  display: inline-block;
+  border: solid 2px #E6E6E6;
+  border-radius: 2px;
+}
+
+.feature .item + .item{
+  margin-left: 1.5rem;
+}
+
+.feature .item h3{
+  width: 30%;
+  float: left;
+  font-size: 2rem;
+  color: #FF9900;
+  margin: 2rem 0 0 2rem;
+}
+
+.feature .item p{
+  margin: 1rem;
+  display: inline-block;
+  color: #999999;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+
+@media only screen and (max-width: 50rem) {
+  .feature, .notice, .product {
+    margin: 1rem;
+  }
+
+  .feature .item h3 {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin: .5rem 0;
+  }
+
+  .feature .item ul {
+      text-align: center;
+      margin: 0;
+      width: 100%;
+  }
+
+  .feature .item ul:last-child {
+      margin-bottom: .8rem
+  }
+
+  .feature .item {
+    text-align: center;
+  }
+
+  .feature .item ul li {
+      font-size: 1.2rem;
+      display: inline-block;
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .feature, .notice, .product{
+    margin: 1rem 1.5rem;
+  }
+  .feature .item{
+    width: 100%;
+    display: block;
+  }
+  .feature .item + .item{
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .feature .item h3 {
+    float: left;
+    width: 30%;
+    margin: 2rem 0 0 2rem;
+  }
+}
+
+
+.notice{
+  border: solid 2px #E6E6E6;
+  border-radius: 2px;
+  text-align: right;
+}
+
+.notice a:nth-child(1){
+  float: left;
+  margin: 0 2rem 0 1rem;
+}
+
+.notice a:nth-child(1):before{
+  content: '最新公告';
+  color: #AAAAAA;
+  margin: 0 2rem 0 0;
+}
+
+.notice a{
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  line-height: 1.8rem;
+  display: inline-block;
+}
+
+.notice a:hover{
+  text-decoration: none;
+}
+
+.notice span{
+  color: #AAAAAA;
+  font-size: 1.2rem;
+}
+
+.notice .more{
+  display: inline-block;
+  text-align: right;
+  color: #F90;
+  padding: .5rem 2rem;
+}
+
+.notice .more:hover{
+  color: #FF7F27;
+}
+
+@media only screen and (max-width: 50rem) {
+}
+
+@media only screen and (max-width: 30rem) {
+  .notice {
+    margin: 1rem 1.2rem;
+    font-size: 0;
+  }
+  .notice a:nth-child(1):before {
+    margin-right: 1rem;
+  }
+  .notice a span {
+    font-size: 1.2rem;
+    display: none;
+  }
+}
+
+.product{
+  border: solid 2px #E6E6E6;
+  border-radius: 2px;
+  border-top: solid 2px #FF7F27;
+}
+
+.product h2{
+  font-size: 2.2rem;
+  width: 30%;
+  text-align: center;
+  padding: 5rem 2rem 0 0rem;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.product h2 em{
+  display: block;
+  width: 100%;
+  padding: .1rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.product .product-content{
+  display: inline-block;
+  width: 70%;
+}
+
+.product h3{
+  font-size: 2rem;
+  width: 20%;
+  float: left;
+  padding: 2rem 0;
+  margin: 0;
+  text-align: center;
+  /* display: inline-block; */
+}
+
+.product h3,.info,.buy,.buy-disabled{
+  border-left: solid 1px #E6E6E6;
+  border-bottom: solid 1px #E6E6E6;
+  height: 7rem;
+  box-sizing: border-box;
+}
+
+.product .info p{
+  float: left;
+  width: 50%;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.product .info{
+  margin: .5rem 1rem;
+  font-size: 1.6rem;
+  width: 60%;
+  float: left;
+  margin: 0;
+}
+
+.product .buy,.buy-disabled{
+  font-size: 1.6rem;
+  float: left;
+  width: calc(20%);
+  box-sizing: border-box;
+  line-height: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.product .buy a{
+  display: inline-block;
+  width: 90%;
+  background-color: #F90;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.product .buy a:hover{
+  background-color: #FF7F27;
+}
+
+.product .buy-disabled a{
+  display: inline-block;
+  width: 90%;
+  background-color: #CCCCCC;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.product .year-rate,.money{
+  font-size: 2.4rem;
+  color: #F90;
+  margin: 0 .5rem;
+  display: block;
+  text-align: center;
+}
+.product .item h3 {
+  padding: 1rem 0;
+}
+.product .item h3 em {
+  color: #F90;
+}
+.product .item h3 i {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+
+@media only screen and (max-width: 50rem) {
+  .product h2{
+    width: 100%;
+    padding: 0 0 .5rem 0;
+    margin: .5rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #E6E6E6;
+  }
+  .product h2 em{
+    display: inline-block;
+    width: auto;
+    font-size: 1.4rem;
+  }
+  .product .product-content{
+    width: 100%;
+  }
+  .product .year-rate,.money{
+    font-size: 2rem;
+    color: #F90;
+    margin: 0 .5rem;
+    display: block;
+    text-align: center;
+  }
+  .product .item h3 {
+    font-weight: normal;
+  }
+  .product .info{
+    font-size: 1.3rem;
+    width: 60%;
+  }
+  
+  .product .info p{
+    width: 50%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .product h3{
+    width: 30%;
+  }
+  .product .info{
+    width: 70%;
+  }
+  .product .buy, .buy-disabled{
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1rem 1rem 0rem 1rem;
+    height: 5rem;
+  }
+  .product .buy a{
+    display: inline-block;
+  }
+}
+
+
+.invest-duration{
+  color: #F90;
+  font-size: 2.5rem;
+  padding: 0 .5rem;
+  font-weight: normal;
+}
+
+.invest-scope{
+  text-align: center;
+  color: #999999;
+  display: block;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+
+
+/*****************
+* 帮助索引区
+****************/
+.footer-content:after,
+.footer-content:before  {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.footer .footer-content {
+  font-size: 1.3rem;
+  padding: 1.5rem 0rem 1.5rem 5rem;
+}
+.footer .footer-content ul {
+  float: left;
+  width: calc(20% - 30px - 3rem);
+}
+
+.footer .footer-content ul:nth-child(2) {
+  padding-left: 4rem;
+}
+
+.footer .footer-content ul li {
+  box-sizing: border-box;
+}
+
+.footer ul li:first-child{
+  font-size: 1.5rem;
+  color: #000;
+  line-height: 2rem;
+}
+
+.footer ul li+li{
+  font-size: 1.4rem;
+  margin: .6rem 0 0 .2rem;
+  color: #666666;
+  line-height: 1.6rem;
+}
+
+
+.footer .brand {
+  height: 35px;
+  width: 150px;
+  float: left;
+  text-align: start;
+  background-image: url('../img/logo@1x.png');
+}
+
+@media only screen and (max-width: 30rem) {
+  .footer .footer-content ul {
+    float: left;
+    width: calc(28% - 20px - 2rem);
+  }
+  .footer .brand {
+    display: none;
+  }
+  .footer .footer-content {
+    font-size: 1.3rem;
+    padding: 1rem 0rem 1rem 1rem;
+  }
+  .footer .footer-content ul:nth-child(2) {
+    padding-left: 1rem;
+  }
+}
+
+
+/* 网站底部导航 */
+footer {
+  width: 100%;
+  padding: 3rem 0 5rem;
+  background-color: #ededed;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li .icon {
+  display: inline-block;
+  text-indent: -999rem;
+  margin-right: 1.5rem;
+  background: url('../img/cert1.png');
+  background-repeat: no-repeat;
+  background-size: 466px 447px;
+  overflow: hidden;
+}
+
+footer ul li .icon-zfywxkz {
+  width: 38px;
+  height: 27px;
+  background-position: -369px -45px;
+}
+
+footer ul li .icon-pcirz {
+  width: 78px;
+  height: 27px;
+  background-position: -110px -96px;
+}
+
+footer ul li .icon-visayz{
+  width: 36px;
+  height: 27px;
+  background-position: -426px -90px;
+}
+
+footer ul li .icon-vsjmfw{
+  width: 63px;
+  height: 27px;
+  background-position: -401px -186px;
+}
+
+footer ul li .icon-wlgs{
+  width: 78px;
+  height: 27px;
+  background-position: -110px -96px;
+}
+
+footer ul li .icon-rzcx{
+  width: 75px;
+  height: 27px;
+  background-position: 0px -320px;
+}
+
+footer ul li .icon-bjgs{
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+  background-size: 30px;
+  background-image: url('../img/cert2.png');
+}
+
+footer p{
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+}
+
+
+@media print {
+  /* 取消边框字体的阴影 */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* 所有链接 加下划线 */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  /* 如果有链接内容 可以写在后面(非必须) */
+  a[href]:after {
+    content: "(" attr('href') ")";
+  }
+  abbr[title]::after {
+    content: "(" attr(title)')';
+  }
+
+  /* 使用 # 和 js的超链接 不打印 href */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  /* page-break-inside 属性 Opera浏览器才起作用，避免在元素内部插入分页 */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+  /* 
+    orphans属性 指，当页面发生分页时，必须在页面底部保留的最少行数
+    widows属性 设置 当元素内部发生分页时，必须在页面顶部保留的最少分页数
+  */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* 避免在标题后直接插入分页符 */
+  h2, h3{
+    page-break-inside: avoid;
+  }
+}
